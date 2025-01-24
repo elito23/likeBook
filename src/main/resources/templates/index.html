@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:insert="~{fragments/head}"></th:block>
+<body>
+<th:block th:insert="~{fragments/nav}"></th:block>
+<main>
+    <div class="container bg-blur rounded mt-5 ">
+        <h1>Welcome to LikeBook App</h1>
+        <hr class="my-3 bg-white w-50"/>
+
+        <p class="h4">With its easy-to-use interface and detail-rich profiles,
+            LikeBook App makes it clear why it's one of the most enduring social network apps.
+            This is the service to try if you're looking for connection with friends and new communities.</p>
+        <hr class="my-3 bg-white w-75"/>
+
+        <h3>
+            <a class="text-primary" href="/users/login">Login</a>
+            if you have an account or
+            <a class="text-primary" href="/users/register">Register</a>
+            now and check our deals.
+        </h3>
+    </div>
+</main>
+<th:block th:insert="~{fragments/footer}"></th:block>
+</body>
+</html>
